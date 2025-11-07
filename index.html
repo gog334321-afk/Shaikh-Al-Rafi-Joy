@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaikh Al Rafi Joy — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --radius:16px; --maxw:1100px; --text:#e6eef6;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:var(--text)}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center}
+    .avatar{width:160px;height:160px;border-radius:50%;flex:0 0 160px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,.06);border:4px solid #fff}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .intro{flex:1}
+    h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+    h2{margin:6px 0 0;font-weight:600;color:var(--muted);font-size:15px}
+    p.lead{margin:12px 0 0;color:var(--muted);line-height:1.5}
+    .cta{margin-top:16px;display:flex;gap:12px}
+    .btn{background:var(--accent);color:#07202a;padding:10px 16px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 20px rgba(6,182,212,0.12)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600}
+    main{margin-top:28px;display:grid;grid-template-columns:1fr 360px;gap:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(2,6,23,.6)}/* HERO VIDEO */
+.hero{padding:0;overflow:hidden;border-radius:var(--radius)}
+.hero video{width:100%;height:320px;object-fit:cover;display:block}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.project{border-radius:14px;overflow:hidden;background:var(--card);display:flex;flex-direction:column}
+.project a{color:inherit;text-decoration:none}
+.thumb{height:140px;background:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.35));display:flex;align-items:center;justify-content:center;font-weight:700}
+.project-body{padding:12px}
+.project h3{margin:0;font-size:16px}
+.project p{margin:8px 0 0;color:var(--muted);font-size:13px}
+
+/* SIDEBAR */
+.sidebar .info{display:grid;gap:10px}
+.meta{display:flex;gap:10px;align-items:center}
+.meta .kbd{background:var(--glass);padding:8px 10px;border-radius:10px;font-weight:700}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:10px;font-size:13px;color:var(--muted)}
+
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+/* Responsive */
+@media (max-width:900px){
+  main{grid-template-columns:1fr}
+  .avatar{width:120px;height:120px;border-radius:50%;flex:0 0 120px}
+  .container{margin:20px;padding:18px}
+  .hero video{height:180px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero card" style="margin-bottom:20px">
+      <video autoplay muted loop playsinline>
+        <source src="./grok_video_2025-11-07-15-54-09.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div><header>
+  <div class="avatar card" style="padding:0;display:flex;align-items:center;justify-content:center"><img src="IMG_20251107_163910.jpg" alt="Shaikh Al Rafi Joy"></div>
+  <div class="intro">
+    <h1>Shaikh Al Rafi Joy</h1>
+    <h2>Web Developer — Frontend & Full‑Stack (HTML, CSS, JavaScript)</h2>
+    <p class="lead">I design and build fast, reliable, and mobile-first websites and browser games that help businesses and creators stand out. If you want a developer who will deliver on time, communicate clearly, and treat your project like his own — let's talk.</p>
+    <div class="cta">
+      <a class="btn" href="tel:01314003330">Call / WhatsApp: 01314003330</a>
+      <a class="btn secondary" href="mailto:skarjoy234@gmail.com">Email: skarjoy234@gmail.com</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="card">
+      <h3 style="margin-top:0">Featured Projects</h3>
+      <p style="margin:6px 0 14px;color:var(--muted)">Click any project to open. I build interactive browser games and demo sites for small businesses.</p>
+
+      <div class="projects-grid">
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/Game/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Game — Play now</div>
+            <div class="project-body"><h3>Game</h3><p>Complete browser game with levels and score tracking.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/endless-Run-2/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Endless Run 2</div>
+            <div class="project-body"><h3>Endless Run 2</h3><p>Improved endless runner — smoother controls and obstacles.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/endless-Run-/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Endless Run</div>
+            <div class="project-body"><h3>Endless Run</h3><p>Original endless runner prototype.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/Tetrax-3/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Tetrax 3</div>
+            <div class="project-body"><h3>Tetrax 3</h3><p>Arcade puzzle game — newer mechanics and UI polish.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/Tetrax-2/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Tetrax 2</div>
+            <div class="project-body"><h3>Tetrax 2</h3><p>Earlier version of Tetrax showing core gameplay loop.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/Salon-demo/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Salon Demo</div>
+            <div class="project-body"><h3>Salon Demo</h3><p>Business demo site layout — booking & services UI.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/Gym-demo/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Gym Demo</div>
+            <div class="project-body"><h3>Gym Demo</h3><p>Responsive landing page for gyms and trainers.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/restaurant-demo./" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Restaurant Demo</div>
+            <div class="project-body"><h3>Restaurant Demo</h3><p>Menu and reservation UI for local restaurants.</p></div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://gog334321-afk.github.io/restaurant-demo-2-/" target="_blank" rel="noreferrer noopener">
+            <div class="thumb">Restaurant Demo 2</div>
+            <div class="project-body"><h3>Restaurant Demo 2</h3><p>Alternate layout and ordering flow.</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3 style="margin-top:0">Why hire me?</h3>
+      <ul style="color:var(--muted);line-height:1.6">
+        <li>Fast delivery — I focus on building what the client needs and shipping quickly.</li>
+        <li>Clear communication — regular updates and honest estimates.</li>
+        <li>Mobile-first & performance-aware — sites that load fast on low-end phones.</li>
+        <li>Games & interactive UI — I specialize in browser-based games and micro-interactions.</li>
+      </ul>
+      <div style="margin-top:12px;text-align:center">
+        <a class="btn" href="mailto:skarjoy234@gmail.com">Hire me — Email now</a>
+      </div>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="card info">
+      <h3 style="margin:0">Contact</h3>
+      <div class="meta"><div class="kbd">Phone</div><div style="color:var(--muted)">01314003330</div></div>
+      <div class="meta"><div class="kbd">WhatsApp</div><div style="color:var(--muted)"><a href="https://wa.me/8801314003330" style="color:inherit;text-decoration:none">Start Chat</a></div></div>
+      <div class="meta"><div class="kbd">Email</div><div style="color:var(--muted)"><a href="mailto:skarjoy234@gmail.com" style="color:inherit;text-decoration:none">skarjoy234@gmail.com</a></div></div>
+
+      <div style="margin-top:10px">
+        <div class="kbd" style="display:inline-block">Location</div>
+        <div style="color:var(--muted);margin-top:6px">Based in Bangladesh — Available for remote & local projects</div>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4 style="margin:0">Skills</h4>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Responsive</span>
+          <span class="skill">Game Dev (Browser)</span>
+          <span class="skill">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4 style="margin:0">Quick Rate</h4>
+        <p style="color:var(--muted);margin:6px 0">Typical small website / landing page: <strong>BDT 6,000 - 12,000</strong><br>Interactive game or custom UI: <strong>Price on request</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h4 style="margin:0">Testimonials</h4>
+      <p style="color:var(--muted);margin-top:8px">"Delivered a clean, fast site — great communication." — Local cafe owner</p>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <div class="card" style="display:inline-block;padding:12px 18px;border-radius:12px">© Shaikh Al Rafi Joy — Web Developer • <a href="mailto:skarjoy234@gmail.com" style="color:var(--accent);text-decoration:none">skarjoy234@gmail.com</a></div>
+</footer>
+
+  </div>
+</body>
+</html>
